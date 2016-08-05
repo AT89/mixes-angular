@@ -1,0 +1,18 @@
+<!doctype html>
+<html data-ng-app="mixes">
+  <head>
+    <title>My Angular App</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body data-ng-controller="mixesController as vm">
+    <div class="mainContainer">
+      <div class="mix" data-ng-repeat = "mix in vm.mixes">
+        <p>
+          {{mix.title}}
+        </p>
+      </div>
+
+    </div>
+  </body>
+</html>
